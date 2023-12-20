@@ -1,0 +1,36 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.prediction {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    background-color: #fff;
+    /* Додайте цей стиль, щоб визначити фон передбачення */
+}
