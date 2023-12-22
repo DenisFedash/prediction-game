@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Scriptorama';
+  src: local('Scriptorama Regular'), local('Scriptorama-Regular'),
+    url('../../public/fonts/Scriptorama.woff2') format('woff2'),
+    url('../../public/fonts/Scriptorama.woff') format('woff'),
+    url('../../public/fonts/Scriptorama.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dihjauti';
+  src: local('Dihjauti Regular'), local('Dihjauti-Regular'),
+    url('../../public/fonts/Dihjauti-Regular/Dihjauti-Regular.woff2') format('woff2'),
+    url('../../public/fonts/Dihjauti-Regular/Dihjauti-Regular.woff') format('woff'),
+    url('../../public/fonts/Dihjauti-Regular/Dihjauti-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,6 +37,10 @@
 
 body{
   background: orange;
+  min-width: 100vw;
+  min-height: 100vh;
+ 
+  padding: 50px;
 }
 
 h1,

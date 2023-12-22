@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        scriptorama: ["Scriptorama", "sans-serif"],
+        dihjauti: ["Dihjauti", "sans-serif"],
+      },
       animation: {
         "ping-slow": "ping 1s cubic-bezier(0, 0, 0.2, 1)",
       },
