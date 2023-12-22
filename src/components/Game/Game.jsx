@@ -63,7 +63,7 @@ const Game = () => {
 
           <Image src={ball} alt="snow-ball" width={580} height={580} />
         </div>
-        <div className="absolute bottom-[275px] right-0">
+        <div className="absolute bottom-[80px] right-0">
           <Image src={stand} alt="stand" width={571} height={228} />
         </div>
       </div>
