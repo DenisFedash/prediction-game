@@ -68,7 +68,7 @@ const Game = () => {
         </div>
       </div>
       <p className=" text-center">{prediction}</p>
-      <button onClick={handlePredictClick} type="button" className="mt-[300px]">
+      <button onClick={handlePredictClick} type="button" className="">
         Запустить снегопад
       </button>
       {/* <ModalWindow
