@@ -34,3 +34,9 @@
     background-color: #fff;
     /* Додайте цей стиль, щоб визначити фон передбачення */
 }
+
+.rotate {
+    display: inline-block;
+    transform: rotate(-180deg);
+    transform-origin: bottom;
+}
