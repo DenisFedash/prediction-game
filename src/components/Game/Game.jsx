@@ -10,6 +10,7 @@ import logo from "../../../public/images/logo.svg";
 import smallDragon from "../../../public/images/small-dragon.svg";
 import dragon from "../../../public/images/dragon.svg";
 import presents from "../../../public/images/presents.svg";
+import balls from "../../../public/images/balls.svg";
 
 const predictions = [
   "Ваше бажання збудеться!",
@@ -62,7 +63,7 @@ const Game = () => {
 
   return (
     <div className="">
-      <div className="flex items-center relative">
+      <div className="flex items-center relative ml-24 mt-4">
         <Image
           src={logo}
           alt="logo"
@@ -78,13 +79,20 @@ const Game = () => {
           height={45}
           className="absolute top-[50px] left-[-25px]"
         />
+        <Image
+          src={balls}
+          alt="balls"
+          width={229}
+          height={325}
+          className="absolute -top-4 right-0"
+        />
       </div>
       <div className="mb-12">
         <h1 className=" font-scriptorama text-[90px] tracking-[3.2px] text-center">
           З Новим 2024 роком!
         </h1>
       </div>
-      <div className="w-[599px] mb-6 font-dihjauti text-[32px]">
+      <div className="w-[599px] mb-6 ml-24 font-dihjauti text-[32px]">
         <p className="mb-6 ">
           Нехай здійсняться всі бажання! Нехай це буде рік удачі, любові і
           багатства, рік щастя, перемоги і добра!
