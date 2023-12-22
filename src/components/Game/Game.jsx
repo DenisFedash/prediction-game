@@ -6,6 +6,8 @@ import ball from "../../../public/images/snow-ball.svg";
 import stand from "../../../public/images/stand.svg";
 import Image from "next/image";
 import Snowfall from "react-snowfall";
+import ModalWindow from "../Modal/Modal";
+import { useDisclosure } from "@mantine/hooks";
 
 const predictions = [
   "Ваше бажання збудеться!",
@@ -28,12 +30,18 @@ const sound = new Howl({
 const Game = () => {
   const [prediction, setPrediction] = useState(null);
   const [snowfallActive, setSnowfallActive] = useState(false);
+  const [modalOpened, setModalOpened] = useState(false);
 
   const handlePredictClick = () => {
     const newPrediction = getRandomPrediction();
     setPrediction(newPrediction);
-    setSnowfallActive(!snowfallActive);
+    setSnowfallActive(true);
+    setModalOpened(true);
     sound.play(); // Відтворення звуку при кожному кліку
+  };
+
+  const handleModalClose = () => {
+    setModalOpened(false);
   };
 
   return (
@@ -49,22 +57,25 @@ const Game = () => {
           </div>
         )}
       </main> */}
-      <div>
+      <div className="flex flex-row-reverse">
         <div className=" relative w-[580px] h-[580px] rounded-full overflow-hidden">
           {snowfallActive && <Snowfall snowflakeCount={3000} />}
 
           <Image src={ball} alt="snow-ball" width={580} height={580} />
         </div>
-        <div className="absolute bottom-[275px] left-0">
+        <div className="absolute bottom-[275px] right-0">
           <Image src={stand} alt="stand" width={571} height={228} />
         </div>
-        <p class="transform -rotate-180 origin-bottom text-2xl">
-          Зосередьте увагу на своїх мріях!
-        </p>
       </div>
+      <p className=" text-center">{prediction}</p>
       <button onClick={handlePredictClick} type="button" className="mt-[300px]">
         Запустить снегопад
       </button>
+      {/* <ModalWindow
+        opened={modalOpened}
+        onClose={handleModalClose}
+        prediction={prediction}
+      /> */}
     </div>
   );
 };
