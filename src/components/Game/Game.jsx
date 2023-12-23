@@ -11,19 +11,11 @@ import smallDragon from "../../../public/images/small-dragon.svg";
 import dragon from "../../../public/images/dragon.svg";
 import presents from "../../../public/images/presents1.svg";
 import balls from "../../../public/images/balls.svg";
-
-const predictions = [
-  "Ваше бажання збудеться!",
-  "Очікуйте несподіванок!",
-  "Новий рік принесе вам щастя!",
-  "Будьте уважні у подорожах!",
-  "Познайомтеся з новими друзями!",
-  "Зосередьте увагу на своїх мріях!",
-];
+import data from "./data.json";
 
 const getRandomPrediction = () => {
-  const randomIndex = Math.floor(Math.random() * predictions.length);
-  return predictions[randomIndex];
+  const randomIndex = Math.floor(Math.random() * data.length);
+  return data[randomIndex];
 };
 
 const sound = new Howl({
@@ -118,7 +110,10 @@ const Game = () => {
             <div className="absolute lg:top-[400px]">
               <div className="relative">
                 <Image src={paper} alt="stand" width={571} height={228} />
-                <p className=" font-dihjauti text-[32px] w-[443px] absolute top-[130px] left-[60px] text-center">
+                <p className=" font-dihjauti text-[25px] w-[443px] absolute top-[90px] left-[60px] text-center ">
+                  <p className=" font-scriptorama tracking-widest mb-4 tex-[32px]">
+                    Передбачення:
+                  </p>
                   {prediction}
                 </p>
               </div>
