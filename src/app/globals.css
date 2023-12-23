@@ -36,9 +36,16 @@
 }
 
 body{
-  background: #CEF0FF;
-  min-width: 100vw;
-  min-height: 100vh;
+  margin: 0;
+    padding: 0;
+  /* background: url("../../public//images//background.jpg"); */
+ 
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+ 
+  width: 100vw;
+  height: 100vh;
  
   
 }
@@ -56,4 +63,20 @@ li {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.layout {
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    
+  }
 }
