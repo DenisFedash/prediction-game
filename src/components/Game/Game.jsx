@@ -154,7 +154,7 @@ const Game = () => {
             className="absolute bottom-0 left-[70px]"
           />
         </div>
-        <div className="absolute top-[450px] right-[50px] lg:top-[250px] lg:right-[200px]">
+        <div className="absolute top-[420px] right-[50px] lg:top-[250px] lg:right-[200px]">
           <div className="relative overflow-hidden lg:w-[580px] lg:h-[580px] rounded-full ">
             {snowfallActive && <Snowfall snowflakeCount={3000} />}
 
