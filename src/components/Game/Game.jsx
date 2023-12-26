@@ -98,11 +98,11 @@ const Game = () => {
           </h1>
         </div>
         <div className="w-[325px] lg:w-[599px] tracking-[1.6px] lg:tracking-[3.2px] lg:leading-9 mb-[400px] lg:mb-[325px] mx-8 lg:ml-24 font-dihjauti text-base lg:text-[32px]">
-          <p className="mb-6 ">
+          <p className="mb-4 lg:mb-6 ">
             Нехай здійсняться всі бажання! Нехай це буде рік удачі, любові і
             багатства, рік щастя, перемоги і добра!
           </p>
-          <p className="mb-6">А ще в Новорічну ніч траплються дива!</p>
+          <p className="mb-4 lg:mb-6">А ще в Новорічну ніч траплються дива!</p>
           <p>
             Відчуйте частинку магії, натисніть на кулю та дізнайтеся своє
             чарівне передбачення на новий рік
@@ -154,7 +154,7 @@ const Game = () => {
             className="absolute bottom-0 left-[70px]"
           />
         </div>
-        <div className="absolute top-[450px] right-[50px] lg:top-[250px] lg:right-[200px]">
+        <div className="absolute top-[400px] right-[50px] lg:top-[250px] lg:right-[200px]">
           <div className="relative overflow-hidden lg:w-[580px] lg:h-[580px] rounded-full ">
             {snowfallActive && <Snowfall snowflakeCount={3000} />}
 
