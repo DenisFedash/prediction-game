@@ -57,17 +57,17 @@ const Game = () => {
   }, [handleDocumentClick]);
 
   return (
-    <div className="ml-auto mr-auto layout bg-back-mobile lg:bg-back-img bg-no-repeat bg-cover overflow-hidden">
-      <div className=" relative ">
+    <div className="ml-auto mr-auto layout bg-back-mobile lg:bg-back-img bg-no-repeat bg-cover overflow-hidden relative">
+      <div className="  ">
         <div className="flex items-center">
           <Image
             src={logo}
             alt="logo"
             width={73}
             height={27}
-            className="mr-2.5 lg:w-[220px] lg:h-[184px] absolute top-14 left-14 lg:top-[-50px] lg:left-24"
+            className="mr-2.5 lg:w-[220px] lg:h-[184px] absolute top-12 left-14 lg:top-[-50px] lg:left-24"
           />
-          <h2 className=" font-scriptorama text-2xl tracking-[4.8px] lg:text-[40px] absolute top-12 left-[135px] lg:top-5 lg:left-[325px]">
+          <h2 className=" font-scriptorama text-2xl tracking-[4.8px] lg:text-[40px] absolute top-10 left-[135px] lg:top-5 lg:left-[325px]">
             вітає
           </h2>
           <Image
@@ -82,7 +82,7 @@ const Game = () => {
             alt="dragon"
             width={53}
             height={71}
-            className="absolute top-[51px] left-2 lg:hidden"
+            className="absolute top-10 left-2 lg:hidden"
           />
           <Image
             src={balls}
@@ -154,7 +154,7 @@ const Game = () => {
             className="absolute bottom-0 left-[70px]"
           />
         </div>
-        <div className="absolute top-[400px] right-[50px] lg:top-[250px] lg:right-[200px]">
+        <div className="absolute top-[450px] right-[50px] lg:top-[250px] lg:right-[200px]">
           <div className="relative overflow-hidden lg:w-[580px] lg:h-[580px] rounded-full ">
             {snowfallActive && <Snowfall snowflakeCount={3000} />}
 
