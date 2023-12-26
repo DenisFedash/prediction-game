@@ -98,6 +98,7 @@ const Game = () => {
           </h1>
         </div>
         <div className="w-[325px] lg:w-[599px] tracking-[1.6px] lg:tracking-[3.2px] lg:leading-9 mb-[400px] lg:mb-[325px] mx-8 lg:ml-24 font-dihjauti text-base lg:text-[32px]">
+          <Snowfall snowflakeCount={100} />
           <p className="mb-4 lg:mb-6 ">
             Нехай здійсняться всі бажання! Нехай це буде рік удачі, любові і
             багатства, рік щастя, перемоги і добра!
