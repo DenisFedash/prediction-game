@@ -19,13 +19,15 @@ const TeamComponent = () => {
     <div className="ml-auto mr-auto layout bg-back-mobile lg:bg-back-img bg-no-repeat bg-cover overflow-hidden relative">
       <Snowfall snowflakeCount={100} />
       <div className="flex items-center">
-        <Image
-          src={logo}
-          alt="logo"
-          width={73}
-          height={27}
-          className="mr-2.5 lg:w-[220px] lg:h-[184px] absolute top-6 left-14 lg:top-[-50px] lg:left-24"
-        />
+        <Link href={`/`}>
+          <Image
+            src={logo}
+            alt="logo"
+            width={73}
+            height={27}
+            className="mr-2.5 lg:w-[220px] lg:h-[184px] absolute top-6 left-14 lg:top-[-50px] lg:left-24"
+          />
+        </Link>
 
         <Image
           src={smallDragon}

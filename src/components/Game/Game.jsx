@@ -60,16 +60,19 @@ const Game = () => {
     <div className="ml-auto mr-auto layout bg-back-mobile lg:bg-back-img bg-no-repeat bg-cover overflow-hidden relative">
       <div className="">
         <div className="flex items-center">
-          <Image
-            src={logo}
-            alt="logo"
-            width={73}
-            height={27}
-            className="mr-2.5 lg:w-[220px] lg:h-[184px] absolute top-12 left-14 lg:top-[-50px] lg:left-24"
-          />
-          <h2 className=" font-scriptorama text-2xl tracking-[4.8px] lg:text-[40px] absolute top-10 left-[135px] lg:top-5 lg:left-[325px]">
-            вітає
-          </h2>
+          <Link href={`/`}>
+            <Image
+              src={logo}
+              alt="logo"
+              width={73}
+              height={27}
+              className="mr-2.5 lg:w-[220px] lg:h-[184px] absolute top-6 left-14 lg:top-[-50px] lg:left-24"
+            />
+            <h2 className=" font-scriptorama text-2xl tracking-[4.8px] lg:text-[40px] absolute top-10 left-[135px] lg:top-5 lg:left-[325px]">
+              вітає
+            </h2>
+          </Link>
+
           <Image
             src={smallDragon}
             alt="small-dragon"
@@ -168,7 +171,7 @@ const Game = () => {
             />
           </div>
           {currentImage && currentImage === "stand" ? (
-            <div className="absolute top-[210px] lg:top-[400px]">
+            <div className="absolute top-[210px] lg:top-[385px]">
               <div className="relative">
                 <Image src={paper} alt="stand" width={571} height={228} />
                 <p className=" font-dihjauti text-xs lg:text-[25px] w-[200px] lg:w-[443px] absolute top-[50px] left-[40px] lg:top-[90px] lg:left-[60px] text-center lg:leading-9">
@@ -193,9 +196,7 @@ const Game = () => {
             </div>
           )}
         </div>
-        <button onClick={handlePredictClick} className="hidden">
-          Изменить картинку
-        </button>
+        <button onClick={handlePredictClick} className="hidden"></button>
       </div>
 
       <div className="absolut bottom-0 left-0 z-10">
