@@ -7,7 +7,7 @@ export default function Head() {
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
       <meta name="description" content="Prediction Game" />
       <meta name="keywords" content="Prediction Game"></meta>
-      <link rel="icon" href="./christmas_three.ico" />
+      <link rel="icon" href="/christmas_three.ico" />
     </>
   );
 }

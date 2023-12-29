@@ -9,12 +9,12 @@ import Snowfall from "react-snowfall";
 import logo from "../../../public/images/logo.svg";
 import smallDragon from "../../../public/images/small-dragon.svg";
 import dragon from "../../../public/images/dragon.svg";
-import presents from "../../../public/images/presents1.svg";
 import presentsLeft from "../../../public/images/presents-left.svg";
 import presentsRight from "../../../public/images/presents-right.svg";
 import presentsCenter from "../../../public/images/presents-center.svg";
 import balls from "../../../public/images/balls.svg";
 import data from "./data.json";
+import Link from "next/link";
 
 const getRandomPrediction = () => {
   const randomIndex = Math.floor(Math.random() * data.length);
@@ -58,7 +58,7 @@ const Game = () => {
 
   return (
     <div className="ml-auto mr-auto layout bg-back-mobile lg:bg-back-img bg-no-repeat bg-cover overflow-hidden relative">
-      <div className="  ">
+      <div className="">
         <div className="flex items-center">
           <Image
             src={logo}
@@ -92,7 +92,7 @@ const Game = () => {
             className=" lg:w-[229px] lg:h-[325px] absolute top-0 right-[-50px] lg:-top-4"
           />
         </div>
-        <div className="mt-[85px] lg:mt-[130px] mb-10 lg:mb-24">
+        <div className="mt-[85px] lg:mt-[130px] mb-6 lg:mb-24">
           <h1 className=" font-scriptorama text-2xl lg:text-[90px] tracking-[4.4px] lg:tracking-[3.2px] text-center">
             З Новим 2024 роком!
           </h1>
@@ -138,24 +138,24 @@ const Game = () => {
             alt="presents"
             width={231}
             height={249}
-            className="absolute bottom-0 left-0"
+            className="absolute bottom-[9px] left-4"
           />
           <Image
             src={presentsRight}
             alt="presents"
             width={231}
             height={249}
-            className="absolute bottom-0 right-0"
+            className="absolute bottom-[9px] right-4"
           />
           <Image
             src={presentsCenter}
             alt="presents"
             width={231}
             height={249}
-            className="absolute bottom-0 left-[70px]"
+            className="absolute bottom-10 left-[70px]"
           />
         </div>
-        <div className="absolute top-[420px] right-[50px] lg:top-[250px] lg:right-[200px]">
+        <div className="absolute top-[410px] right-[50px] lg:top-[250px] lg:right-[200px]">
           <div className="relative overflow-hidden lg:w-[580px] lg:h-[580px] rounded-full ">
             {snowfallActive && <Snowfall snowflakeCount={3000} />}
 
@@ -196,6 +196,14 @@ const Game = () => {
         <button onClick={handlePredictClick} className="hidden">
           Изменить картинку
         </button>
+      </div>
+
+      <div className="absolut bottom-0 left-0 z-10">
+        <Link href={`/team`}>
+          <p className="text-center font-dihjauti text-xs tracking-[1.2px] z-10">
+            Наша команда
+          </p>
+        </Link>
       </div>
     </div>
   );
