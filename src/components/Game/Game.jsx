@@ -66,7 +66,7 @@ const Game = () => {
               alt="logo"
               width={73}
               height={27}
-              className="mr-2.5 lg:w-[220px] lg:h-[184px] absolute top-6 left-14 lg:top-[-50px] lg:left-24"
+              className="mr-2.5 lg:w-[220px] lg:h-[184px] absolute top-12 left-14 lg:top-[-50px] lg:left-24"
             />
             <h2 className=" font-scriptorama text-2xl tracking-[4.8px] lg:text-[40px] absolute top-10 left-[135px] lg:top-5 lg:left-[325px]">
               вітає
