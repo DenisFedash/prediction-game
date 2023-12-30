@@ -178,7 +178,15 @@ const Game = () => {
                   <p className=" font-scriptorama tracking-widest mb-4 lg:mb-10 lg:text-[32px]">
                     Передбачення:
                   </p>
-                  {prediction}
+                  {prediction.includes("готуй") ? (
+                    <p>
+                      Свято наближається, свято наближається,
+                      <span className="ml-1 line-through">готуй</span>, святкуй
+                      в колі друзів та близьких!
+                    </p>
+                  ) : (
+                    prediction
+                  )}
                 </p>
               </div>
             </div>
