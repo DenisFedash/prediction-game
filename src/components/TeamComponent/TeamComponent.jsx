@@ -61,9 +61,10 @@ const TeamComponent = () => {
             <Image
               src={img}
               alt="avatar"
-              width={116}
-              height={116}
-              className="ml-auto mr-auto rounded-full mb-1 lg:w-[300px] lg:h-[300px] lg:mb-5"
+              width={300}
+              height={300}
+              loading="eager"
+              className="ml-auto mr-auto rounded-full mb-1 sm:w-[116px] lg:w-[300px] lg:mb-5"
             />
             <div className=" font-dihjauti text-xs tracking-[1.1px] lg:text-3xl lg:tracking-[3.2px] font-bold lg:leading-10">
               <p>{name}</p>
